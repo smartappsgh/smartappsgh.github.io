@@ -1,8 +1,10 @@
+import packageJSON from '@/package.json'
+
 export default function Home() {
   return (
     <>
       <main className='main'>
-        Main
+        Main: v{ packageJSON.version }
       </main>
     </>
   )
