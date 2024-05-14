@@ -1,7 +1,7 @@
-import { Jost } from 'next/font/google'
+import { Exo } from 'next/font/google'
 import favicon from '@/public/favicon.ico'
 
-const jost = Jost({ subsets: ['latin'] })
+const exo = Exo({ subsets: ['latin'] })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,7 +9,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="shortcut icon" href={ favicon.src } type="image/x-icon" />
       </head>
-      <body className={ jost.className }>
+      <body className={ exo.className }>
         <header>
         </header>
         { children }
