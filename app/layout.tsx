@@ -1,5 +1,6 @@
 import { Exo } from 'next/font/google'
 import favicon from '@/public/favicon.ico'
+import { GlobalStyle } from './styles/theme'
 
 const exo = Exo({ subsets: ['latin'] })
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={ exo.className }>
         <header>
         </header>
+        <GlobalStyle />
         { children }
       </body>
     </html>
