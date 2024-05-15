@@ -13,9 +13,12 @@ export default function Home() {
         <GlobalStyle />
         <Navbar />
         <Main />
-        <About />
+        <div id='about-section'> 
+          <About />
+        </div>
         <Footer />
       </main>
     </>
-  )
+  );
 }
+

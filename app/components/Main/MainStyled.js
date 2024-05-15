@@ -26,14 +26,23 @@ export const MainContainer = styled.div`
             height: 100%;
             object-fit: contain;
         }
-    @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+    height: auto;
         .main-title {
             font-size: 5rem;
         }
-    }
-    @media (max-width: 768px) {
+}
+@media (max-width: 768px) {
+    height: auto;
         .main-title {
-            font-size: 4rem;
+            font-size: 3.5rem;
         }
-    }
+}
+@media screen and (max-width: 400px){
+    padding: 0;
+    height: auto;
+        .main-title {
+            font-size: 2rem;
+        }
+}
 `;
