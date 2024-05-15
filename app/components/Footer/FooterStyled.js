@@ -25,7 +25,14 @@ export const FooterContainer = styled.footer`
         .footer__text {
             color: #fff;
         }
-    @media screen and (max-width: 768px) {
+        .footer__logo-email {
+            
+                .footer__img-email {
+                    width: 180px;
+                    height: auto;
+                }
+        }
+    @media screen and (max-width: 1200px) {
         flex-direction: column;
             .footer__logo {
                 margin-bottom: 1rem;
