@@ -1,4 +1,6 @@
 import React from 'react'
+import packageJSON from '@/package.json'
+import DateUtility from '@/app/utilities/DateUtility'
 import './FooterStyled'
 import logo from '../../images/logo.png'
 import Image from 'next/image'
@@ -13,7 +15,7 @@ export const Footer = () => {
           <p className='footer__title'>Quantovo</p>
       </div>
       <div className='footer__text'>
-        <p>© 2021 Quantovo Limited.</p>
+        <p>© { DateUtility.getCurrentYear() } Quantovo Limited.</p>
         <p>All rights reserved.</p>
       </div>
       <div className='footer__text'>
