@@ -14,8 +14,8 @@ export const FooterContainer = styled.footer`
             display: flex;
             align-items: center;
                 .footer__img {
-                    width: 50px;
-                    height: 50px;
+                    width: 60px;
+                    height: 60px;
                 }
                 .footer__title {
                     font-size: 1.5rem;
@@ -23,10 +23,12 @@ export const FooterContainer = styled.footer`
                 }
         }
         .footer__text {
-            color: #fff;
+            color: #777;
+            font-size: 0.8rem;
+            text-align: center;
         }
         .footer__logo-email {
-            
+           
                 .footer__img-email {
                     width: 180px;
                     height: auto;
@@ -35,6 +37,7 @@ export const FooterContainer = styled.footer`
     @media screen and (max-width: 1200px) {
         flex-direction: column;
             .footer__logo {
+            
                 margin-bottom: 1rem;
             }
             .footer__text {
