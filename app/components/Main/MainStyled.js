@@ -9,6 +9,7 @@ export const MainContainer = styled.div`
     height: 100vh;
     padding: 2rem;
         .main-title {
+            width: 70%;
             padding: 5rem;
             color: #fff;
             font-size: 6rem;
@@ -35,10 +36,11 @@ export const MainContainer = styled.div`
 @media (max-width: 768px) {
     height: auto;
         .main-title {
+            width: 100%;
             font-size: 3.5rem;
         }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 500px){
     padding: 0;
     height: auto;
         .main-title {

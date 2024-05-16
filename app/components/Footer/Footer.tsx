@@ -22,6 +22,8 @@ export const Footer = () => {
         <p>House, 3087, Limassol, Cyprus</p>
       </div>
       <div className='footer__logo-email'>
+        {/* <p>Email</p>
+        <p>info@quantovo.com</p> */}
         <Image src={email} alt='logo' className='footer__img-email' />
       </div>
      </FooterContainer>
