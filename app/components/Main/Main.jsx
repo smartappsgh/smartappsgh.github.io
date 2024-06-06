@@ -8,9 +8,11 @@ export const Main = () => {
   return (
     <MainContainer>
         <div className='main-title'>
-            <p>We Develop Trading Software And Algorithms</p>
+            <p>Proprietary Trading Firm</p>
         </div>
-        <Image src={lines} alt="patern" className='patern'/>
+        <div className='main-image'>
+          <Image src={lines} alt="patern" className='patern'/>
+        </div>
     </MainContainer>
   )
 }
