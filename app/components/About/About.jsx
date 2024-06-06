@@ -10,13 +10,13 @@ export const About = () => {
     <AboutContainer>
       <div className='about-img'>
         <Image src={mainQ} alt="mainQlogo" className="mainQlogo" />
-      </div> 
+      </div>
       <div className='about-container'>
           <div className="about-text">
               <span>company</span>
               <h1>About us</h1>
-              <p>At Quantovo we build software solutions for financial traders around the globe. Our team uses the latest research, technologies, and tools to help brokers, traders, and entrepreneurs alike achieve better results faster and with higher ROI.</p>
-          </div> 
+              <p>Welcome to Quantovo, a proprietary trading firm focused on using advanced technology and innovative strategies in global financial markets. Our team of experienced professionals combines market knowledge with modern algorithms to achieve consistent trading performance.</p>
+          </div>
       </div>
     </AboutContainer>
   )
