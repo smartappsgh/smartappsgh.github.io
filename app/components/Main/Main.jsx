@@ -10,7 +10,9 @@ export const Main = () => {
         <div className='main-title'>
             <p>Proprietary Trading Firm</p>
         </div>
-        <Image src={lines} alt="patern" className='patern'/>
+        <div className='main-image'>
+          <Image src={lines} alt="patern" className='patern'/>
+        </div>
     </MainContainer>
   )
 }
