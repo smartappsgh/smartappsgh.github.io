@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center; 
-    height: 100vh;
+    height: 85vh;
     padding: 0 2rem;
     position: relative;
 
@@ -17,7 +17,7 @@ export const MainContainer = styled.div`
         width: 100%;
         height: 100%; 
         position: absolute;
-        bottom: 5%;
+        bottom: 10%;
         p {
             -moz-user-select: -moz-none;
             -o-user-select: none;
