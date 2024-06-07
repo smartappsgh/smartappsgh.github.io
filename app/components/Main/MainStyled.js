@@ -2,20 +2,22 @@ import styled from "styled-components";
 
 export const MainContainer = styled.div`
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center; 
     height: 100vh;
+    padding: 0 2rem;
     position: relative;
 
     .main-title {
-        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-
+        height: 100%; 
+        position: absolute;
+        bottom: 5%;
         p {
             -moz-user-select: -moz-none;
             -o-user-select: none;
@@ -29,43 +31,55 @@ export const MainContainer = styled.div`
     }
 
     .main-image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end; 
         width: 100%;
+        height: 100%; 
         position: absolute;
-        bottom: 0;
-        text-align: center;
+        bottom: 0; 
+        left: 0;
 
         .patern {
-            width: 100%;
-            max-width: 100%;
-            height: 100%;
+            max-width: 90%;
+            height: auto; 
             object-fit: contain;
         }
     }
 
     @media (max-width: 1200px) {
         .main-title p {
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
 
     @media (max-width: 768px) {
+        height: 60vh;
+
         .main-title p {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             padding: 0 1rem;
         }
     }
 
     @media (max-width: 576px) {
         .main-title p {
-            font-size: 3rem;
-            padding: 0 0.5rem;
+            font-size: 1.8rem;
+            padding: 0 1.5rem;
         }
     }
 
     @media (max-width: 400px) {
-        height: 90vh;
+        height: 50vh;
         .main-title p {
-            font-size: 2rem;
+            font-size: 1.8rem;
+        }
+    }
+
+    @media (max-width: 260px) {
+        height: 40vh;
+        .main-title p {
+            font-size: 1.5rem;
         }
     }
 `;

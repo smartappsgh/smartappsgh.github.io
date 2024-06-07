@@ -14,7 +14,7 @@ export const Navbar = () => {
     <div className='container'>
       <NavbarContainer>
         <div className='navbar__logo'>
-          <Image src={logo} alt='logo' className='navbar__img' width={50} height={50}/>
+          <Image src={logo} alt='logo' className='navbar__img' width={50} height={50} />
           <p className='navbar__title'>Quantovo</p>
         </div>
         <ul className='navbar__menu'>

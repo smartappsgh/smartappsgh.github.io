@@ -4,7 +4,6 @@ import { AboutContainer } from './AboutStyled'
 import Image from 'next/image';
 import mainQ from '../../images/mainq.png'
 
-
 export const About = () => {
   return (
     <AboutContainer>
