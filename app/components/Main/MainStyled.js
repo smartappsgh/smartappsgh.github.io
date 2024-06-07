@@ -15,7 +15,7 @@ export const MainContainer = styled.div`
         justify-content: center;
         align-items: center;
         width: 100%;
-
+        margin-bottom: 10rem;
         p {
             -moz-user-select: -moz-none;
             -o-user-select: none;
