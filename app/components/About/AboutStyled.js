@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
     align-items: center;
     background-color: #fff;
     min-height: 100vh; 
+    width: 100%;
     padding-bottom: 5rem; 
 
     .about-img {
