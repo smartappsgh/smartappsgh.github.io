@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavbarStyled';
 import { NavbarContainer } from './NavbarStyled';
+import { SharedContainer } from '../../styles/SharedStyles';
 import logo from '../../images/logo.png';
 import Image from 'next/image';
 
@@ -11,7 +12,7 @@ export const Navbar = () => {
   };
 
   return (
-    <div className='container'>
+    <SharedContainer>
       <NavbarContainer>
         <div className='navbar__logo'>
           <Image src={logo} alt='logo' className='navbar__img' width={50} height={50} />
@@ -23,6 +24,6 @@ export const Navbar = () => {
           </li>
         </ul>
       </NavbarContainer>
-    </div>
+    </SharedContainer>
   );
 };

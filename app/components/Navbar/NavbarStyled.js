@@ -9,7 +9,7 @@ export const NavbarContainer = styled.nav`
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-
+    
         .navbar__logo{
             display: flex;
             align-items: center;

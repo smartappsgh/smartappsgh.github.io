@@ -6,7 +6,7 @@ export const MainContainer = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center; 
-    height: 87vh;
+    height: 85vh;
     padding: 0 2rem;
     position: relative;
 
@@ -39,9 +39,10 @@ export const MainContainer = styled.div`
         position: absolute;
         bottom: 0; 
         left: 0;
+        margin: 2% 0;
 
         .patern {
-            max-width: 90%;
+            max-width: 87%;
             height: auto; 
             object-fit: contain;
         }
