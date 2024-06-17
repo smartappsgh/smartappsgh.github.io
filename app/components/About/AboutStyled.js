@@ -28,7 +28,7 @@ export const AboutContainer = styled.div`
     align-items: center;
     background-color: #fff;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh + 2px);
     overflow-x: hidden;
 
     .about-img {
@@ -98,7 +98,6 @@ export const AboutContainer = styled.div`
             width: 500px;
         }
     }
-    
 
     @media (max-width: 899px) {
 

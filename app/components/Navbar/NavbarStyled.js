@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const NavbarContainer = styled.nav`
     display: flex;
     justify-content: space-between;
-    height: 150px;
-    padding: 2% 9%;
+    height: 100px;
+    padding: 0 9%;
     -moz-user-select: -moz-none;
     -o-user-select: none;
     -khtml-user-select: none;
@@ -60,6 +60,6 @@ export const NavbarContainer = styled.nav`
     }
 
     @media screen and (min-width: 2000px) {
-        padding: 2% 17%;
+        padding: 0 17%;
     }
 `;

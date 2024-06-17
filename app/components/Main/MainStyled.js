@@ -45,8 +45,7 @@ export const MainContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        height: calc(100vh - 150px);
-
+        height: calc(100vh - 100px);
         .title {
             padding-bottom: 203px;
             animation: ${fadeIn} 1s ease-out forwards;
@@ -69,7 +68,6 @@ export const MainContainer = styled.div`
         position: absolute;
         bottom: 0;
         width: 100%;
-        
         .patern {
             max-width: 87%;
             height: auto;
