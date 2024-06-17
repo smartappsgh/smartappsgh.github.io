@@ -63,9 +63,6 @@ export const MainContainer = styled.div`
         justify-content: center;
         align-items: flex-end;
         width: 100%;
-        height: 100%;
-        bottom: 0;
-        left: 0;
         margin: 2% 0;
 
         .patern {
@@ -77,7 +74,9 @@ export const MainContainer = styled.div`
     }
 
     @media (min-width: 2000px) {
-        //min-height: 85vh;
+        .main-title .title {
+            padding: 30% 0;
+        }
     }
 
     @media (max-width: 1200px) {
