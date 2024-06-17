@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 2048 192" xmlns="http://www.w3.org/2000/svg">
+<path transform="translate(761,47)" d="m0 0h922l1 8v33h-923zm4 3-1 1v33l1 1h915l1-4v-15l-1-16z" fill="#D2D001"/>
+<path transform="translate(209,160)" d="m0 0h1750v3h-1750z" fill="#D2D001"/>
+<path transform="translate(1e3 122)" d="m0 0h677v4h-677z" fill="#D2D001"/>
+<path transform="translate(1718,47)" d="m0 0h40l1 2v39h-42v-40zm3 3v35h34v-35z" fill="#D2D001"/>
+<path transform="translate(95,122)" d="m0 0h41v41h-41zm3 4v34h34v-34z" fill="#D2D001"/>
+<path transform="translate(1794,85)" d="m0 0h165v3h-165z" fill="#D2D001"/>
+</svg>
