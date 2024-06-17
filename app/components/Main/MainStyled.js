@@ -42,7 +42,7 @@ export const MainContainer = styled.div`
 
     .main-title {
         .title {
-            padding: 15% 0;
+            padding: 12% 0;
             animation: ${fadeIn} 1s ease-out forwards;
         }
 
@@ -76,7 +76,7 @@ export const MainContainer = styled.div`
 
     @media (min-width: 1500px) {
         .main-title .title {
-            padding: 15% 0;
+            padding: 12% 0;
         }
     }
 
