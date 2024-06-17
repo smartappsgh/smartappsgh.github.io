@@ -76,7 +76,7 @@ export const MainContainer = styled.div`
 
     @media (min-width: 1500px) {
         .main-title .title {
-            padding: 30% 0;
+            padding: 15% 0;
         }
     }
 
