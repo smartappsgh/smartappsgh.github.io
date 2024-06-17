@@ -1,23 +1,52 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const moveFromRight = keyframes`
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+`;
+
+const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+`;
 
 export const MainContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    text-align: center; 
+    text-align: center;
     padding: 0 2rem;
-    
+    opacity: 0;  /* Initial opacity set to 0 */
+    transform: translateY(-50px);  /* Initial transform to match the animation */
+
+    &.animate {
+        animation: ${fadeIn} 3s cubic-bezier(0.42, 0, 0.58, 1) forwards;  /* Use forwards to maintain the final state of the animation */
+        opacity: 1;  /* Ensure opacity is set to 1 after animation ends */
+        transform: translateY(0);  /* Ensure transform is reset after animation ends */
+    }
+
     img {
         width: 100%;
         height: auto;
-
     }
 
     .main-title {
-
         .title {
             padding: 40% 0;
+            animation: ${fadeIn} 2s ease-out forwards;
         }
 
         p {
@@ -29,23 +58,25 @@ export const MainContainer = styled.div`
             color: #fff;
             font-size: 5rem;
             padding: 0 2rem;
+            animation: ${fadeIn} 2s ease-out forwards;
         }
     }
 
     .main-image {
         display: flex;
         justify-content: center;
-        align-items: flex-end; 
+        align-items: flex-end;
         width: 100%;
-        height: 100%; 
-        bottom: 0; 
+        height: 100%;
+        bottom: 0;
         left: 0;
         margin: 2% 0;
 
         .patern {
             max-width: 87%;
-            height: auto; 
+            height: auto;
             object-fit: contain;
+            animation: ${moveFromRight} 2s ease-out forwards;
         }
     }
 

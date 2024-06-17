@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './AboutStyled';
 import { SharedContainer } from '../../styles/SharedStyles';
 import { AboutContainer } from './AboutStyled'
@@ -6,10 +6,30 @@ import Image from 'next/image';
 import mainQ from '../../images/mainq.png'
 
 export const About = () => {
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setIsIntersecting(entry.isIntersecting);
+    }, {
+      threshold: 0.5,
+    });
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
+
+    return () => {
+      if (aboutRef.current) {
+        observer.unobserve(aboutRef.current);
+      }
+    };
+  }, []);
   return (
     <div style={{width: '100%', backgroundColor: '#fff'}}>
       <SharedContainer>
-        <AboutContainer>
+        <AboutContainer ref={aboutRef} className={isIntersecting ? 'animate' : ''}>
           <div className='about-img'>
             <Image src={mainQ} alt="mainQlogo" className="mainQlogo" />
           </div>
