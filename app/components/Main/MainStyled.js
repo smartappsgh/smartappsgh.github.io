@@ -42,7 +42,7 @@ export const MainContainer = styled.div`
 
     .main-title {
         .title {
-            padding: 20% 0;
+            padding: 15% 0;
             animation: ${fadeIn} 1s ease-out forwards;
         }
 
