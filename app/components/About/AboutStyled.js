@@ -28,7 +28,7 @@ export const AboutContainer = styled.div`
     align-items: center;
     background-color: #fff;
     width: 100%;
-    padding: 15% 0;
+    padding: 10% 0;
     overflow-x: hidden;
 
     .about-img {
@@ -100,7 +100,7 @@ export const AboutContainer = styled.div`
     }
 
     @media (min-width: 1500px) {
-        padding: 15% 0;
+        padding: 5% 0;
     }
 
     @media (max-width: 899px) {
