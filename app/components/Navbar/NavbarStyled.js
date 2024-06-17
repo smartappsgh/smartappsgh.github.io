@@ -10,7 +10,7 @@ export const NavbarContainer = styled.nav`
     -webkit-user-select: none;
     user-select: none;
     
-        .navbar__logo{
+        .navbar__logo {
             display: flex;
             align-items: center;
                 .navbar__title {
@@ -55,5 +55,9 @@ export const NavbarContainer = styled.nav`
                     font-size: 1rem;
                 } 
             }
+    }
+
+    @media screen and (min-width: 2000px) {
+        margin: 2% 15%;
     }
 `;

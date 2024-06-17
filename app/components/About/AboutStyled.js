@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    //flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     background-color: #fff;
     min-height: 100vh; 
@@ -11,18 +11,18 @@ export const AboutContainer = styled.div`
     padding-bottom: 5rem; 
 
     .about-img {
-        display: flex;
-        flex: 1 1 400px;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 70%;
+        //display: flex;
+        //flex: 1 1 400px;
+        //justify-content: center;
+        //align-items: center;
+        width: 35%;
+        //max-width: 70%;
 
         .mainQlogo {
             width: 100%;
-            max-width: 90%;
+            //max-width: 75%;
             height: auto;
-            object-fit: contain;
+            //object-fit: contain;
         }
     }
 
@@ -46,14 +46,14 @@ export const AboutContainer = styled.div`
 
             h1 {
                 color: #000;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 margin: 1rem 0;
                 max-width: fit-content;
             }
 
             p {
                 color: #000;
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 max-width: 95%;
                 line-height: 1.5;
                 text-align: justify;
