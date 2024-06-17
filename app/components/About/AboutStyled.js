@@ -100,7 +100,7 @@ export const AboutContainer = styled.div`
     }
 
     @media (min-width: 1500px) {
-        padding: 30% 0;
+        padding: 15% 0;
     }
 
     @media (max-width: 899px) {
