@@ -23,6 +23,7 @@ const fadeIn = keyframes`
 `;
 
 export const MainContainer = styled.div`
+    position: relative;
     text-align: center;
     padding: 0 2rem;
     opacity: 0;
@@ -41,8 +42,13 @@ export const MainContainer = styled.div`
     }
 
     .main-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 150px);
+
         .title {
-            padding: 12% 0;
+            padding-bottom: 203px;
             animation: ${fadeIn} 1s ease-out forwards;
         }
 
@@ -60,12 +66,10 @@ export const MainContainer = styled.div`
     }
 
     .main-image {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        position: absolute;
+        bottom: 0;
         width: 100%;
-        margin: 2% 0;
-
+        
         .patern {
             max-width: 87%;
             height: auto;
@@ -73,13 +77,7 @@ export const MainContainer = styled.div`
             animation: ${moveFromRight} 1s ease-out forwards;
         }
     }
-
-    @media (min-width: 1500px) {
-        .main-title .title {
-            padding: 12% 0;
-        }
-    }
-
+    
     @media (max-width: 1200px) {
         .main-title p {
             font-size: 3rem;
