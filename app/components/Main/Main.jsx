@@ -12,7 +12,7 @@ export const Main = () => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setIsIntersecting(true);
-        observer.unobserve(entry.target); // Stop observing once it has intersected
+        observer.unobserve(entry.target);
       }
     }, {
       threshold: 0.5,

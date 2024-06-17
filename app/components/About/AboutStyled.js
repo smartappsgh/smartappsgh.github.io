@@ -1,9 +1,19 @@
 import styled, { keyframes } from "styled-components";
 
-const fadeIn = keyframes`
+const fadeInWithBounce = keyframes`
     0% {
         opacity: 0;
-        transform: translateY(-300px);
+        transform: translateY(-1000px);
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(-50px);
+    }
+    60% {
+        transform: translateY(20px);
+    }
+    80% {
+        transform: translateY(-10px);
     }
     100% {
         opacity: 1;
@@ -17,9 +27,9 @@ export const AboutContainer = styled.div`
     gap: 10%;
     align-items: center;
     background-color: #fff;
-    min-height: 100vh;
     width: 100%;
-    padding-bottom: 5rem;
+    padding: 20% 0;
+    overflow-x: hidden;
 
     .about-img {
         width: 35%;
@@ -29,20 +39,21 @@ export const AboutContainer = styled.div`
             height: auto;
             opacity: 0;
             transform: translateY(-100px);
-            transition: opacity 1s ease-out, transform 1.5s ease-out;
+            transition: opacity 1.5s ease-out, transform 1.5s ease-out;
             &.animate {
-                animation: ${fadeIn} 1s ease-out forwards;
+                animation: ${fadeInWithBounce} 2s ease-out forwards;
             }
         }
     }
 
     .about-text {
-        width: 500px;
+        width: 350px;
         opacity: 0;
         transform: translateY(-100px);
-        transition: opacity 1s ease-out, transform 1.5s ease-out;
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
         &.animate {
-            animation: ${fadeIn} 1s ease-out forwards;
+            opacity: 1;
+            transform: translateY(0);
         }
 
         span {
@@ -82,37 +93,46 @@ export const AboutContainer = styled.div`
         }
     }
 
+    @media (min-width: 900px) {
+        .about-text {
+            width: 500px;
+        }
+    }
+
+    @media (min-width: 1500px) {
+        padding: 30% 0;
+    }
+
     @media (max-width: 899px) {
-        min-height: 80vh;
-        padding-bottom: 5rem;
 
         .about-text {
-            justify-content: center;
-            flex-wrap: wrap;
-            padding-left: 6rem;
-
             h1 {
                 font-size: 2rem;
             }
 
             p {
                 font-size: 0.8rem;
-                max-width: 80%;
             }
         }
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
+        flex-direction: column;
         .about-text {
-            padding-left: 5rem;
+            align-items: center;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
 
             h1 {
                 font-size: 1rem;
             }
-
+            
             span {
                 font-size: 0.7rem;
             }
+            
             p {
                 font-size: 0.7rem;
                 max-width: 70%;

@@ -27,6 +27,7 @@ export const MainContainer = styled.div`
     padding: 0 2rem;
     opacity: 0;
     transform: translateY(-50px);
+    overflow: hidden;
 
     &.animate {
         animation: ${fadeIn} 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
@@ -73,7 +74,7 @@ export const MainContainer = styled.div`
         }
     }
 
-    @media (min-width: 2000px) {
+    @media (min-width: 1500px) {
         .main-title .title {
             padding: 30% 0;
         }
@@ -99,7 +100,7 @@ export const MainContainer = styled.div`
     }
 
     @media (max-width: 400px) {
-        .main-title p {
+        .main-title .title {
             font-size: 1.8rem;
         }
     }
