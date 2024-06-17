@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
     display: flex;
     //flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 10%;
     align-items: center;
     background-color: #fff;
     min-height: 100vh; 
@@ -11,53 +12,37 @@ export const AboutContainer = styled.div`
     padding-bottom: 5rem; 
 
     .about-img {
-        //display: flex;
-        //flex: 1 1 400px;
-        //justify-content: center;
-        //align-items: center;
         width: 35%;
-        //max-width: 70%;
 
         .mainQlogo {
             width: 100%;
-            //max-width: 75%;
             height: auto;
-            //object-fit: contain;
         }
     }
 
-    .about-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1 1 500px;
-        flex-direction: row;
+    .about-text {
+        width: 500px;
 
-        .about-text {
-            text-align: left;
-            max-width: 500px;
+        span {
+           color: #cdd500;
+           font-size: 1.3rem;
+           text-transform: uppercase;
+           font-weight: 700;
+        }
 
-            span {
-                color: #cdd500;
-                font-size: 1.3rem;
-                text-transform: uppercase;
-                font-weight: 700;
-            }
+        h1 {
+           color: #000;
+           font-size: 2.5rem;
+           margin: 1rem 0;
+           max-width: fit-content;
+        }
 
-            h1 {
-                color: #000;
-                font-size: 2.5rem;
-                margin: 1rem 0;
-                max-width: fit-content;
-            }
-
-            p {
-                color: #000;
-                font-size: 1.3rem;
-                max-width: 95%;
-                line-height: 1.5;
-                text-align: justify;
-            }
+        p {
+           color: #000;
+           font-size: 1.3rem;
+           max-width: 95%;
+           line-height: 1.5;
+           text-align: justify;
         }
     }
 

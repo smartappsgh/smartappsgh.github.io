@@ -6,6 +6,10 @@ import logo from '../../images/logo.png';
 import Image from 'next/image';
 
 export const Navbar = () => {
+  const handleLogoClick = () => {
+    window.location.reload();
+  };
+
   const handleScrollToAbout = () => {
     const aboutSection = document.getElementById('about-section');
     aboutSection?.scrollIntoView({ behavior: 'smooth' });
@@ -14,7 +18,7 @@ export const Navbar = () => {
   return (
     <SharedContainer>
       <NavbarContainer>
-        <div className='navbar__logo'>
+        <div className='navbar__logo' onClick={handleLogoClick}>
           <Image src={logo} alt='logo' className='navbar__img' width={50} height={50} />
           <p className='navbar__title'>Quantovo</p>
         </div>

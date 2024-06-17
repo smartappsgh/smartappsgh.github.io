@@ -13,6 +13,7 @@ export const NavbarContainer = styled.nav`
         .navbar__logo {
             display: flex;
             align-items: center;
+            cursor: pointer;
                 .navbar__title {
                     font-size: 1.5rem;
                     color: #fff;
@@ -58,6 +59,6 @@ export const NavbarContainer = styled.nav`
     }
 
     @media screen and (min-width: 2000px) {
-        margin: 2% 15%;
+        margin: 2% 17%;
     }
 `;
