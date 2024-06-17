@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 const fadeIn = keyframes`
     0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-300px);
     }
     100% {
         opacity: 1;
@@ -21,21 +21,29 @@ export const AboutContainer = styled.div`
     width: 100%;
     padding-bottom: 5rem;
 
-    &.animate {
-        animation: ${fadeIn} 2s ease-out;
-    }
-
     .about-img {
         width: 35%;
 
         .mainQlogo {
             width: 100%;
             height: auto;
+            opacity: 0;
+            transform: translateY(-100px);
+            transition: opacity 1s ease-out, transform 1.5s ease-out;
+            &.animate {
+                animation: ${fadeIn} 1s ease-out forwards;
+            }
         }
     }
 
     .about-text {
         width: 500px;
+        opacity: 0;
+        transform: translateY(-100px);
+        transition: opacity 1s ease-out, transform 1.5s ease-out;
+        &.animate {
+            animation: ${fadeIn} 1s ease-out forwards;
+        }
 
         span {
             color: #cdd500;

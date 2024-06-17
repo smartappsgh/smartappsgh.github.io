@@ -29,9 +29,9 @@ export const MainContainer = styled.div`
     transform: translateY(-50px);
 
     &.animate {
-        animation: ${fadeIn} 3s cubic-bezier(0.42, 0, 0.58, 1) forwards;  /* Use forwards to maintain the final state of the animation */
-        opacity: 1;  /* Ensure opacity is set to 1 after animation ends */
-        transform: translateY(0);  /* Ensure transform is reset after animation ends */
+        animation: ${fadeIn} 1s cubic-bezier(0.42, 0, 0.58, 1) forwards;
+        opacity: 1;
+        transform: translateY(0);
     }
 
     img {
@@ -42,7 +42,7 @@ export const MainContainer = styled.div`
     .main-title {
         .title {
             padding: 20% 0;
-            animation: ${fadeIn} 2s ease-out forwards;
+            animation: ${fadeIn} 1s ease-out forwards;
         }
 
         p {
@@ -54,7 +54,7 @@ export const MainContainer = styled.div`
             color: #fff;
             font-size: 5rem;
             padding: 0 2rem;
-            animation: ${fadeIn} 2s ease-out forwards;
+            animation: ${fadeIn} 1s ease-out forwards;
         }
     }
 
@@ -69,7 +69,7 @@ export const MainContainer = styled.div`
             max-width: 87%;
             height: auto;
             object-fit: contain;
-            animation: ${moveFromRight} 2s ease-out forwards;
+            animation: ${moveFromRight} 1s ease-out forwards;
         }
     }
 
