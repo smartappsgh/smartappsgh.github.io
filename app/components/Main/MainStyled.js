@@ -23,14 +23,10 @@ const fadeIn = keyframes`
 `;
 
 export const MainContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     padding: 0 2rem;
-    opacity: 0;  /* Initial opacity set to 0 */
-    transform: translateY(-50px);  /* Initial transform to match the animation */
+    opacity: 0;
+    transform: translateY(-50px);
 
     &.animate {
         animation: ${fadeIn} 3s cubic-bezier(0.42, 0, 0.58, 1) forwards;  /* Use forwards to maintain the final state of the animation */
@@ -45,7 +41,7 @@ export const MainContainer = styled.div`
 
     .main-title {
         .title {
-            padding: 40% 0;
+            padding: 20% 0;
             animation: ${fadeIn} 2s ease-out forwards;
         }
 
@@ -78,6 +74,10 @@ export const MainContainer = styled.div`
             object-fit: contain;
             animation: ${moveFromRight} 2s ease-out forwards;
         }
+    }
+
+    @media (min-width: 2000px) {
+        //min-height: 85vh;
     }
 
     @media (max-width: 1200px) {
